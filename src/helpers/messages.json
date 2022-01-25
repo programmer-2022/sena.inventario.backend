@@ -1,0 +1,27 @@
+{
+    "success": [
+        {
+            "SAVE": "Se ha almacenado un registro exitosamente"
+        },
+        {
+            "UPDATE": "Registro modificado exitosamente"
+        },
+        {
+            "DELETE": "Se ha eliminado con éxito"
+        }
+    ],
+    "error": [
+        {
+            "SAVE": "Ocurrió un error al tratar de almacenar un registro"
+        },
+        {
+            "UPDATE": "Ocurrió un error al tratar de modificar un registro"
+        },
+        {
+            "DELETE": "Ocurrió un error al tratar de eliminar un registro"
+        },
+        {
+            "NOT_FOUND": "Error, registro no encontrado"
+        }
+    ]
+}

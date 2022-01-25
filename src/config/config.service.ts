@@ -9,7 +9,7 @@ export class ConfigService {
         const isDevelopmentEnv = process.env.NODE_ENV !== "production"
         //Ambiente Desarrollo
         if(isDevelopmentEnv) {
-            const envFilePath = __dirname + '../../.env'
+            const envFilePath = __dirname + '/../../.env'
             const existPath = fs.existsSync(envFilePath)
             
             if(!existPath) {
@@ -22,7 +22,9 @@ export class ConfigService {
         } else {
             //Ambiente producción
             this.envConfig = {
-                PORT: process.env.PORT,
+                PORT : process.env.PORT,
+                MONGODB_URI : process.env.MONGODB_URI,
+                MONGODB_NAME : process.env.MONGODB_NAME
             }
         }
     }
